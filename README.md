@@ -2,7 +2,7 @@
 
 A sleek desktop display that shows your currently playing Spotify track in real time. Perfect for desks, workspaces, streaming setups, and smart home environments.
 
-![Project Banner](https://stasis.hackclub-assets.com/images/1782182841924-dkybw8.png)
+![Project Banner](https://stasis.hackclub-assets.com/images/1782527114363-t8smtu.png)
 
 ## Features
 
