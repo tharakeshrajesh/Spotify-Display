@@ -15,10 +15,12 @@ A sleek desktop display that shows your currently playing Spotify track in real 
 
 ## BOM
 
-| Name            | Purpose                             | Quantity | Total Cost (USD) | Link                                                 | Distributor |
-|-----------------|-------------------------------------|----------|------------------|------------------------------------------------------|-------------|
-| TFT LCD Display | Showing songs and info              | 1        | 1.00             | https://www.aliexpress.us/item/3256812128321582.html | AliExpress  |
-| ESP32 C3 Mini   | The MCU to control screen and logic | 1        | 4.04             | https://www.aliexpress.us/item/3256810385497528.html | AliExpress  |
+| Name                | Purpose                             | Quantity | Total Cost (USD) | Link                                                                                                                                                                                                               | Distributor |
+|---------------------|-------------------------------------|----------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| EC11 Rotary Encoder | Volume and others                   | 1        | 1.13             | https://www.aliexpress.us/item/1005009360298765.html?spm=a2g0o.productlist.main.16.60ffXuWAXuWAKs&utparam-url=scene%3Asearch%7Cquery_from%3Apc_back_same_best%7Cx_object_id%3A1005009360298765%7C_p_origin_prod%3A | AliExpress  |
+| TFT LCD Display     | Showing songs and info              | 1        | 1.33             | https://www.aliexpress.us/item/3256812128321582.html                                                                                                                                                               | AliExpress  |
+| ESP32 C3 Mini       | The MCU to control screen and logic | 1        | 1.33             | https://www.aliexpress.us/item/1005009360298765.html?spm=a2g0o.productlist.main.16.60ffXuWAXuWAKs&utparam-url=scene%3Asearch%7Cquery_from%3Apc_back_same_best%7Cx_object_id%3A1005009360298765%7C_p_origin_prod%3A | AliExpress  |
+
 
 
 ## Requirements
@@ -32,9 +34,20 @@ A sleek desktop display that shows your currently playing Spotify track in real 
 
 ## Getting Started
 
-### 1. Download the step/obj files and slice it for your printer then print
+1. Get components and wire them like this:
+    * Switch 1     ---> GPIO 4 and GND
+    * Switch 2     ---> GPIO 5 and GND
+    * Switch 3     ---> GPIO 6 and GND
+    * Encoder CLK  ---> GPIO 7
+    * Encoder DT   ---> GPIO 8
+    * TFT LCD CS   ---> GPIO 10
+    * TFT LCD DC   ---> GPIO 1
+    * TFT LCD MOSI ---> GPIO 0
+    * TFT LCD SCLK ---> GPIO 2
+    * TFT LCD RST  ---> GPIO 3
 
-### 2. Install Dependencies
+2. Download the step/obj files and slice it for your printer then print
+3. Install Dependencies
 
 
 I used PlatformIO so here is my platformio.ini file:
